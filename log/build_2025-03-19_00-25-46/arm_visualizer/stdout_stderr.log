@@ -1,0 +1,48 @@
+running egg_info
+creating ../build/arm_visualizer/arm_visualizer.egg-info
+writing ../build/arm_visualizer/arm_visualizer.egg-info/PKG-INFO
+writing dependency_links to ../build/arm_visualizer/arm_visualizer.egg-info/dependency_links.txt
+writing entry points to ../build/arm_visualizer/arm_visualizer.egg-info/entry_points.txt
+writing requirements to ../build/arm_visualizer/arm_visualizer.egg-info/requires.txt
+writing top-level names to ../build/arm_visualizer/arm_visualizer.egg-info/top_level.txt
+writing manifest file '../build/arm_visualizer/arm_visualizer.egg-info/SOURCES.txt'
+reading manifest file '../build/arm_visualizer/arm_visualizer.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/arm_visualizer/arm_visualizer.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/abd3194/gui_ws/build/arm_visualizer/build
+creating /home/abd3194/gui_ws/build/arm_visualizer/build/lib
+creating /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer
+copying arm_visualizer/__init__.py -> /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer
+copying arm_visualizer/setup.py -> /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer
+copying arm_visualizer/three_d_visualizer.py -> /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer
+copying arm_visualizer/joint_visualizer.py -> /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer
+creating /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/arm_visualizer
+copying arm_visualizer/arm_visualizer/__init__.py -> /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/arm_visualizer
+running install
+running install_lib
+creating /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer
+creating /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/arm_visualizer
+copying /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/arm_visualizer/__init__.py -> /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/arm_visualizer
+copying /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/__init__.py -> /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer
+copying /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/setup.py -> /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer
+copying /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/three_d_visualizer.py -> /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer
+copying /home/abd3194/gui_ws/build/arm_visualizer/build/lib/arm_visualizer/joint_visualizer.py -> /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer
+byte-compiling /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/arm_visualizer/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/setup.py to setup.cpython-310.pyc
+byte-compiling /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/three_d_visualizer.py to three_d_visualizer.cpython-310.pyc
+byte-compiling /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer/joint_visualizer.py to joint_visualizer.cpython-310.pyc
+running install_data
+creating /home/abd3194/gui_ws/install/arm_visualizer/share/ament_index
+creating /home/abd3194/gui_ws/install/arm_visualizer/share/ament_index/resource_index
+creating /home/abd3194/gui_ws/install/arm_visualizer/share/ament_index/resource_index/packages
+copying resource/arm_visualizer -> /home/abd3194/gui_ws/install/arm_visualizer/share/ament_index/resource_index/packages
+copying package.xml -> /home/abd3194/gui_ws/install/arm_visualizer/share/arm_visualizer
+running install_egg_info
+Copying ../build/arm_visualizer/arm_visualizer.egg-info to /home/abd3194/gui_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer-0.1.0-py3.10.egg-info
+running install_scripts
+Installing joint_visualizer script to /home/abd3194/gui_ws/install/arm_visualizer/lib/arm_visualizer
+Installing three_d_visualizer script to /home/abd3194/gui_ws/install/arm_visualizer/lib/arm_visualizer
+writing list of installed files to '/home/abd3194/gui_ws/build/arm_visualizer/install.log'

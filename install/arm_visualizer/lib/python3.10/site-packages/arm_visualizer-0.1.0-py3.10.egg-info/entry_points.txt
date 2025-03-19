@@ -1,0 +1,4 @@
+[console_scripts]
+joint_visualizer = arm_visualizer.joint_visualizer:main
+three_d_visualizer = arm_visualizer.three_d_visualizer:main
+

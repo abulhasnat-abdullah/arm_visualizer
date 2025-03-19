@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: arm-visualizer
+Version: 0.1.0
+Summary: A ROS2 package for visualizing and controlling a robot arm using Tkinter
+Home-page: UNKNOWN
+Maintainer: azwad
+Maintainer-email: wakifrajin@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
