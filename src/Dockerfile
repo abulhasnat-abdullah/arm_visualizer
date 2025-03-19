@@ -8,17 +8,17 @@ RUN apt-get update && apt-get install -y \
     ros-humble-rclpy \
     ros-humble-ros2launch \
     python3-tk \
-    portaudio19-dev && \
+    portaudio19-dev \
     libgl1-mesa-glx \
     libglib2.0-0 \
     xvfb \
-    rm -rf /var/lib/apt/lists/*  # Cleanup to reduce image size
+    && rm -rf /var/lib/apt/lists/*  # Cleanup to reduce image size
 
 # Set up the workspace
-WORKDIR /gui_ws
+WORKDIR /my_ws
 
 # Copy the package source code
-COPY . /gui_ws
+COPY . /my_ws
 
 # Check if requirements.txt exists before installing
 RUN if [ -f "requirements.txt" ]; then \
@@ -34,7 +34,7 @@ RUN source /opt/ros/humble/setup.bash && colcon build
 
 # Source the environment when container starts
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
-RUN echo "source /gui_ws/install/setup.bash" >> /root/.bashrc
+RUN echo "source /my_ws/install/setup.bash" >> /root/.bashrc
 
 # Default command when container starts
 CMD ["/bin/bash"]

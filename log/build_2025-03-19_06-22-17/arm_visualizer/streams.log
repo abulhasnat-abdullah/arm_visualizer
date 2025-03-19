@@ -1,0 +1,23 @@
+[0.305s] Invoking command in '/home/abd3194/my_ws/src/arm_visualizer': PYTHONPATH=/home/abd3194/my_ws/build/arm_visualizer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abd3194/my_ws/install/arm_visualizer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arm_visualizer build --build-base /home/abd3194/my_ws/build/arm_visualizer/build install --record /home/abd3194/my_ws/build/arm_visualizer/install.log --single-version-externally-managed install_data
+[0.420s] running egg_info
+[0.420s] writing ../../build/arm_visualizer/arm_visualizer.egg-info/PKG-INFO
+[0.422s] writing dependency_links to ../../build/arm_visualizer/arm_visualizer.egg-info/dependency_links.txt
+[0.422s] writing entry points to ../../build/arm_visualizer/arm_visualizer.egg-info/entry_points.txt
+[0.422s] writing requirements to ../../build/arm_visualizer/arm_visualizer.egg-info/requires.txt
+[0.422s] writing top-level names to ../../build/arm_visualizer/arm_visualizer.egg-info/top_level.txt
+[0.422s] reading manifest file '../../build/arm_visualizer/arm_visualizer.egg-info/SOURCES.txt'
+[0.422s] adding license file 'LICENSE'
+[0.422s] writing manifest file '../../build/arm_visualizer/arm_visualizer.egg-info/SOURCES.txt'
+[0.422s] running build
+[0.422s] running build_py
+[0.422s] running install
+[0.422s] running install_lib
+[0.423s] running install_data
+[0.423s] running install_egg_info
+[0.424s] removing '/home/abd3194/my_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer-0.1.0-py3.10.egg-info' (and everything under it)
+[0.424s] Copying ../../build/arm_visualizer/arm_visualizer.egg-info to /home/abd3194/my_ws/install/arm_visualizer/lib/python3.10/site-packages/arm_visualizer-0.1.0-py3.10.egg-info
+[0.424s] running install_scripts
+[0.436s] Installing joint_visualizer script to /home/abd3194/my_ws/install/arm_visualizer/lib/arm_visualizer
+[0.436s] Installing three_d_visualizer script to /home/abd3194/my_ws/install/arm_visualizer/lib/arm_visualizer
+[0.437s] writing list of installed files to '/home/abd3194/my_ws/build/arm_visualizer/install.log'
+[0.451s] Invoked command in '/home/abd3194/my_ws/src/arm_visualizer' returned '0': PYTHONPATH=/home/abd3194/my_ws/build/arm_visualizer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abd3194/my_ws/install/arm_visualizer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arm_visualizer build --build-base /home/abd3194/my_ws/build/arm_visualizer/build install --record /home/abd3194/my_ws/build/arm_visualizer/install.log --single-version-externally-managed install_data

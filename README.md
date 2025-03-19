@@ -25,7 +25,7 @@ cd arm_visualizer
 
 ### Build and Source the ROS2 Workspace
 ```bash
-cd ~/gui_ws/
+cd ~/my_ws/
 colcon build
 source install/setup.bash
 ```
