@@ -19,16 +19,25 @@ class JointVisualizer(Node):
 
         self.root = tk.Tk()
         self.root.title("Robot Arm Visualizer")
+        self.root.configure(bg='grey')
 
         self.fig, (self.ax_top, self.ax_front) = plt.subplots(1, 2, figsize=(10, 5))
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.root)
         self.canvas.get_tk_widget().pack()
 
+        # Frame for sliders
+        slider_frame = tk.Frame(self.root, bg='grey')
+        slider_frame.pack(pady=10)
+
         # Create Sliders for Joint Angles
         self.sliders = []
         for i, label in enumerate(["Base (Top View)", "Shoulder", "Elbow", "Wrist"]):
-            slider = tk.Scale(self.root, from_=-180, to=180, orient="horizontal",
-                              label=label, command=self.slider_update)
+            frame = tk.Frame(slider_frame, bg='grey')
+            frame.pack(side=tk.LEFT, padx=10)
+            lbl = tk.Label(frame, text=label, fg='white', bg='grey')
+            lbl.pack()
+            slider = tk.Scale(frame, from_=-180, to=180, orient="horizontal",
+                              command=self.slider_update, bg='#333366', fg='white', highlightbackground='grey')
             slider.bind("<ButtonPress-1>", self.start_slider_adjust)
             slider.bind("<ButtonRelease-1>", self.end_slider_adjust)
             slider.pack()
@@ -77,6 +86,12 @@ class JointVisualizer(Node):
         """Update the Matplotlib visualization."""
         self.ax_top.clear()
         self.ax_front.clear()
+        self.ax_top.set_facecolor('LightSteelBlue')
+        self.ax_front.set_facecolor('LightSteelBlue')
+        self.ax_top.spines['bottom'].set_color('white')
+        self.ax_top.spines['left'].set_color('white')
+        self.ax_front.spines['bottom'].set_color('white')
+        self.ax_front.spines['left'].set_color('white')
 
         # Convert degrees to radians
         base_angle = np.radians(self.joint_angles[0])  # Base rotation (Z-axis)
@@ -88,11 +103,11 @@ class JointVisualizer(Node):
         # **Top View (XY Plane)**
         base_x = np.cos(base_angle)
         base_y = np.sin(base_angle)
-        self.ax_top.plot([0, base_x], [0, base_y], 'ro-', linewidth=2, markersize=5)
+        self.ax_top.plot([0, base_x], [0, base_y], 'o-', linewidth=2, markersize=5, color='Indigo')
         self.ax_top.set_xlim(-1.5, 1.5)
         self.ax_top.set_ylim(-1.5, 1.5)
-        self.ax_top.set_title("Top View (XY) - Base Rotation")
-        self.ax_top.grid(True)
+        self.ax_top.set_title("Top View (XY) - Base Rotation", color='Indigo')
+        self.ax_top.grid(True, color='black')
 
         # **Front View (XZ Plane) - Forward Kinematics**
         x, z = [0], [0]  # Starting point at (0,0)
@@ -103,8 +118,8 @@ class JointVisualizer(Node):
         self.ax_front.plot(x, z, 'bo-', linewidth=2, markersize=5)
         self.ax_front.set_xlim(-3, 3)
         self.ax_front.set_ylim(-3, 3)
-        self.ax_front.set_title("Front View (XZ) - Arm Motion")
-        self.ax_front.grid(True)
+        self.ax_front.set_title("Front View (XZ) - Arm Motion", color='Indigo')
+        self.ax_front.grid(True, color='black')
 
         self.canvas.draw()
 
